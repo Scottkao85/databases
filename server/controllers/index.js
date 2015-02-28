@@ -5,8 +5,18 @@ var bluebird = require('bluebird');
 
 module.exports = {
   messages: {
-    get: function (req, res) {}, // a function which handles a get request for all messages
-    post: function (req, res) {} // a function which handles posting a message to the database
+    // a function which handles a get request for all messages
+    get: function (req, res) {
+      // call models.get(param, function(){
+        // on success of models.get, this is what we want to have happen
+      // });
+      // var params = req.????;
+    },
+    // a function which handles posting a message to the database
+    post: function (req, res) {
+      // we need to know what table to post to <--- NOPE we already know, because route brought us here, inside of messages
+
+    }
   },
 
   users: {
